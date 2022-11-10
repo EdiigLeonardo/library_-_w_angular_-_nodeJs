@@ -1,0 +1,41 @@
+.vendas {
+  .venda {
+    border-left: red 1px solid;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+    div {
+      flex: 1;
+
+      h5 {
+        margin: 0;
+        font-size: 1.1em;
+      }
+
+      p {
+        margin: 0;
+        font-size: 1em;
+        margin-top: 5px;
+
+        &.data {
+          color: gray;
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    img {
+      width: 60px;
+      border-radius: 12px;
+      box-shadow: 1px 3px 4px 0 #0000008a;
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: solid 1px lightgray;
+    margin-bottom: 15px;
+  }
+}

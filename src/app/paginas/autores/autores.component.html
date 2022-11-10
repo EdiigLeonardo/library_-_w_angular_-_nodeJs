@@ -1,0 +1,11 @@
+<div class="autores">
+  <div *ngFor="let a of autores; let index = index">
+    <hr *ngIf="index > 0"/>
+    <div class="autor">
+      <h5>{{a.nome}}</h5>
+      <p>
+        {{a.livros}} livro<ng-container *ngIf="a.livros!==1">s</ng-container>
+      </p>
+    </div>
+  </div>
+</div>

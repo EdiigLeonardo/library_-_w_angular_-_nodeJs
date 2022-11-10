@@ -1,0 +1,16 @@
+.favoritos {
+  display: flex;
+  flex-wrap: wrap;
+
+  .favorito {
+    width: 33.33%;
+    padding: 10px 10px;
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 1px 3px 4px 0 #0000008a;
+    }
+
+  }
+}

@@ -1,0 +1,5 @@
+<div class="favoritos">
+  <div *ngFor="let favorito of lista_favoritos" class="favorito" [routerLink]="['/detalhes/',favorito.id]">
+    <img [src]="favorito.imagem"/>
+  </div>
+</div>

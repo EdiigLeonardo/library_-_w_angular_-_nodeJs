@@ -1,0 +1,13 @@
+<div class="vendas">
+  <ng-container *ngFor="let v of vendas; let index = index">
+    <hr *ngIf="index > 0"/>
+    <div class="venda">
+      <div>
+        <h5>{{v.livro}}</h5>
+        <p>{{v.cliente}}</p>
+        <p class="data">{{v.data | date}}</p>
+      </div>
+      <img [src]="v.livro_imagem"/>
+    </div>
+  </ng-container>
+</div>

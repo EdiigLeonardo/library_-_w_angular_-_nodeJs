@@ -1,0 +1,103 @@
+.detalhes {
+  .cabecalho {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 0 5%;
+    justify-content: center;
+
+    .capa {
+      width: 50%;
+      position: relative;
+
+      img {
+        width: 100%;
+        max-width: 300px;
+        top: -30px;
+        border-radius: 12px;
+        box-shadow: 0px 5px 8px 0 #0000008a;
+      }
+
+      .bookmark {
+        position: absolute;
+        bottom: -15px;
+        right: -15px;
+        padding: 15px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0px 5px 8px 0 #0000008a;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .ng-fa-icon {
+          font-size: 1.5em;
+          color: #53A7DB;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .titulo {
+      margin-left: 20px;
+
+      h4 {
+        margin: 0;
+        font-size: 2em;
+      }
+
+      p {
+        margin: 0.5em 0;
+      }
+
+      span {
+        font-weight: normal;
+        background-color: #81cb2f;
+        display: inline-block;
+        color: white;
+        padding: 2px 10px;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  .sinopse {
+    border-top: 2px #d4d4d4 solid;
+    padding: 25px 0;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+
+  .vendas {
+    border-top: 2px #d4d4d4 solid;
+
+    .cabecalho_vendas {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 0;
+      color: #5E5E5E;
+
+      h5 {
+        margin: 0;
+        font-size: 1.1em;
+      }
+    }
+
+    .venda {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      border-left: solid #F15C2B 2px;
+
+      h5 {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

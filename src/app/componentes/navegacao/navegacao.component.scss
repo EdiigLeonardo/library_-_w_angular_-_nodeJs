@@ -1,0 +1,31 @@
+.navegacao {
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #cecdcd;
+  left: 0;
+  right: 0;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: auto;
+
+    a {
+      text-decoration: none;
+      color: #adadad;
+      flex: 1;
+      text-align: center;
+      padding: 1.1em 0;
+
+      &.active, &:hover {
+        color: #00b0ed;
+      }
+    }
+  }
+}

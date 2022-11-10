@@ -1,0 +1,9 @@
+<div class="livro">
+  <img [src]="imagem"/>
+  <div>
+    <h4>{{titulo}}</h4>
+    <p class="autor">{{autor}}</p>
+    <p class="ano">{{ano_publicacao}}</p>
+  </div>
+  <fa-icon [routerLink]="['/detalhes', id_livro]" [icon]="faEye"></fa-icon>
+</div>

@@ -1,0 +1,9 @@
+<input placeholder="Pesquisar Livro" class="pesquisa">
+<app-livro
+  *ngFor="let livro of livros"
+  [titulo]="livro.titulo"
+  [autor]="livro.autor"
+  [ano_publicacao]="livro.ano_publicacao"
+  [imagem]="livro.imagem"
+  [id_livro]="livro.id"
+></app-livro>

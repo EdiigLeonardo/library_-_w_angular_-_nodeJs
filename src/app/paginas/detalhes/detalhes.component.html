@@ -1,0 +1,26 @@
+<div class="detalhes">
+  <div class="cabecalho">
+    <div class="capa">
+      <img [src]="detalhes.imagem"/>
+      <div class="bookmark" (click)="toggleFavorite()">
+        <fa-icon [icon]="favorito ? faBookmarkSolid : faBookmark"></fa-icon>
+      </div>
+    </div>
+    <div class="titulo">
+      <h4>{{detalhes.titulo}}</h4>
+      <p>{{detalhes.autor}}</p>
+      <span>{{detalhes.ano_publicacao}}</span>
+    </div>
+  </div>
+  <div class="sinopse">{{detalhes.sinopse}}</div>
+  <div class="vendas">
+    <div class="cabecalho_vendas">
+      <h5>Vendas</h5>
+      <fa-icon [icon]="faChevronDown"></fa-icon>
+    </div>
+    <div class="venda" *ngFor="let v of detalhes.vendas">
+      <h5>{{v.cliente}}</h5>
+      <p>{{v.data | date:"medium"}}</p>
+    </div>
+  </div>
+</div>
